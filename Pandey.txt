@@ -1,3 +1,4 @@
+/*
 #include <stdio.h>
 void main()
 {
@@ -11,5 +12,27 @@ void main()
 	for(int i=0;i<10;i++)
 	{
 		printf("%d\n",a[i]);
+	}
+}
+*/
+
+import java.util.Scanner;
+import java.util.ArrayList;
+class Array{
+	public static void main(String[] args){
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		System.out.println("enter 5 values in the array");
+		for (int i=0;i<5;i++)
+		{
+			Scanner sc = new Scanner(System.in);
+			int element=sc.nextInt();
+			list.add(element);
+		}
+
+		System.out.println("The elements in the list are: ");
+		for (int i=0;i<5;i++)
+		{
+			System.out.print(list.get(i)+" ");
+		}
 	}
 }
